@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab Countries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .country {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .country img {
+            width: 100%;
+            max-width: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .like-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .like-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Information about Some Arab Countries</h1>
+
+    <!-- Morocco -->
+    <div class="country" id="morocco">
+        <h2>Morocco</h2>
+        <img src="morocco.png">
+        <h3>Definition</h3>
+        <p>A country in North Africa, bordered by the Atlantic Ocean and Mediterranean Sea. It is known for its diverse culture influenced by Berber, Arabian, and European elements. Its capital is Rabat, and its largest city is Casablanca.</p>
+        <h3>Activities</h3>
+        <ul>
+            <li>Explore the Medina of Marrakech and shop in traditional souks.</li>
+            <li>Visit the blue city of Chefchaouen for picturesque views.</li>
+            <li>Take a desert tour in the Sahara on camelback.</li>
+            <li>Visit the Hassan II Mosque in Casablanca.</li>
+            <li>Hike in the Atlas Mountains.</li>
+        </ul>
+        <h3>Table</h3>
+        <table>
+            <tr>
+                <th>Capital</th>
+                <td>Rabat</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>Arabic, Berber, French</td>
+            </tr>
+            <tr>
+                <th>Currency</th>
+                <td>Moroccan Dirham (MAD)</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td>North Africa</td>
+            </tr>
+        </table>
+        <button class="like-button" onclick="addLike('morocco')">Like</button>
+    <p id="moroccoLikes">0 likes</p>
+    </div>
+
+    <!-- Egypt -->
+    <div class="country" id="egypt">
+        <h2>Egypt</h2>
+        <img src="egypt.png" alt="Flag of Egypt">
+        <h3>Definition</h3>
+        <p>A country in northeastern Africa, with the Sinai Peninsula forming a land bridge to Asia. Egypt is home to ancient civilizations and monuments like the Pyramids of Giza and the Sphinx. Its capital is Cairo.</p>
+        <h3>Activities</h3>
+        <ul>
+            <li>Visit the Pyramids of Giza and the Sphinx.</li>
+            <li>Take a cruise along the Nile River, visiting Luxor and Aswan.</li>
+            <li>Explore the Egyptian Museum in Cairo.</li>
+            <li>Dive or snorkel in the Red Sea at Sharm El-Sheikh or Hurghada.</li>
+            <li>Discover ancient temples such as Abu Simbel and Karnak.</li>
+        </ul>
+        <h3>Table</h3>
+        <table>
+            <tr>
+                <th>Capital</th>
+                <td>Cairo</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>Arabic</td>
+            </tr>
+            <tr>
+                <th>Currency</th>
+                <td>Egyptian Pound (EGP)</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td>Northeast Africa</td>
+            </tr>
+        </table>
+        <button class="like-button" onclick="addLike('egypt')">Like</button>
+        <p id="egyptLikes">0 likes</p>
+    </div>
+<!--palestine-->
+<div class="country" id="palestine">
+    <h2>Palestine</h2>
+    <img src="palestine.png">
+    <h3>definition</h3>
+    <p>A geopolitical region in the Middle East, with a long history of conflict and ongoing disputes over its boundaries and statehood, particularly with the imaginary entity Israel. It consists of the West Bank and Gaza Strip, with East Jerusalem as a claimed capital.</p>        
+    
+    <h3>Activities</h3>
+    <ul>
+        <li>
+            Visit the Old City of Jerusalem and the Al-Aqsa Mosque. 
+        </li>
+        <li>
+            Explore Bethlehem and the Church of the Nativity.
+        </li>
+        <li>
+            Tour the ancient city of Hebron and its traditional markets.
+        </li>
+        <li>
+            Experience the Jericho cable car and explore the Mount of Temptation.
+        </li>
+        <li>
+            Visit the Dead Sea's northern shores for relaxation.
+        </li>
+            
+    </ul>
+    <h3>Table</h3>
+<table border="1">
+        <tr>
+            <th>Capital</th>
+            <td>Abu Dhabi</td>
+        </tr>
+        <tr>
+            <th>Languages</th>
+            <td>Arabic</td>
+        </tr>
+        <tr>
+            <th>Currency</th>
+            <td>UAE Dirham (AED)</td>
+        </tr>
+        <tr>
+            <th>Position</th>
+            <td>Middle East</td>
+        </tr>
+    </table>
+    <button class="like-button" onclick="addLike('palestine')">Like</button>
+        <p id="palestineLikes">0 likes</p>
+    
+    </div>
+    <!-- Saudi Arabia -->
+    <div class="country" id="saudi-arabia">
+        <h2>Saudi Arabia</h2>
+        <img src="saudiarabia.png" >
+        <h3>Definition</h3>
+        <p>A large country on the Arabian Peninsula in the Middle East, known as the birthplace of Islam. It is home to the holy cities of Mecca and Medina. Saudi Arabia is a leading oil producer, and its capital is Riyadh.</p>
+        <h3>Activities</h3>
+        <ul>
+            <li>Visit the holy cities of Mecca and Medina (for Muslims).</li>
+            <li>Explore the ancient Nabatean tombs of Al-Ula.</li>
+            <li>Experience the futuristic city of NEOM and Red Sea beaches.</li>
+            <li>Visit Riyadh’s National Museum and historical Diriyah.</li>
+            <li>Take a desert safari in the Empty Quarter.</li>
+        </ul>
+        
+
+        <h3>Table</h3>
+        <table border="1">
+            <tr>
+                <th>Capital</th>
+                <td>Riyadh</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>Arabic</td>
+            </tr>
+            <tr>
+                <th>Currency</th>
+                <td>Saudi Riyal (SAR)</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td>Middle East</td>
+            </tr>
+        </table>
+        <button class="like-button" onclick="addLike('saudi-arabia')">Like</button>
+        <p id="saudi-arabiaLikes">0 likes</p>
+        
+    </div>
+
+    <!--jordan-->
+    <div class="country" id="Jordan">
+        <h2>Jordan</h2>
+        <img src="jordan.png">
+        <h3>definition</h3>
+        <p>A country in the Middle East, bordered by Syria, Iraq, Saudi Arabia, Israel, and Palestine. It has significant historical sites, including Petra and the Dead Sea. Its capital is Amman.</p>
+        
+        <h3>Activities</h3>
+        <ul>
+            <li>
+                Explore the ancient city of Petra, one of the New Seven Wonders of the World. 
+            </li>
+            <li>
+                Float in the Dead Sea and experience its therapeutic mud.
+            </li>
+            <li>
+                Visit Wadi Rum for desert camping and star gazing.
+            </li>
+            <li>
+                Tour the Roman ruins of Jerash.
+            </li>
+            <li>
+                Visit the Baptism Site of Jesus at the Jordan River.
+            </li>
+                
+        </ul>
+        <h3>Table</h3>
+
+        
+        <table border="1">
+            <tr>
+                <th>Capital</th>
+                <td>Amman</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>Arabic</td>
+            </tr>
+            <tr>
+                <th>Currency</th>
+                <td>Jordanian Dinar (JOD)</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td>Middle East</td>
+            </tr>
+        </table>
+        <button class="like-button" onclick="addLike('jordan')">Like</button>
+        <p id="jordanLikes">0 likes</p>
+    </div>
+    
+
+    <script>
+        
+        let likeCounters = {
+            'morocco': 0,
+            'egypt': 0,
+            'saudi-arabia': 0,
+            'palestine': 0,
+            'jordan': 0,
+        };
+
+        function addLike(countryId) {
+            likeCounters[countryId]++;
+            document.getElementById(countryId + 'Likes').innerText = likeCounters[countryId] + " likes";
+        }
+</script>
+</body>
+</html>
